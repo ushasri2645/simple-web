@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        My Simple webpage
+    </title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <style>
+        .navbar {
+            background-color: grey;
+            padding: 10px;
+            margin: 0px;
+        }
+    </style>
+</head>
+
+<body style="background-color:lavender">
+    <div class="back">
+        <header>
+            <h1 style="text-align:center;color:Purple;">Welcome to my Awesome Webpage</h1>
+        </header>
+        <nav class="navbar">
+            <a class="nav-item" href="#home" onclick="update('home')">Home</a>
+            <a class="nav-item" href="#Aboutus" onclick="update('Aboutus')">About Us</a>
+            <a class="nav-item" href="#Services" onclick="update('Services')">Services</a>
+            <a class="nav-item" href="#contactus" onclick="update('contactus')">Contact Us</a>
+        </nav>
+        <br />
+        <input  class="ip1" type="text" id="tpye-of-info" class="dynamic-change" value="Content" />
+        <div>
+            <br>
+            <img class="image" src="https://www.shutterstock.com/shutterstock/photos/2399658873/display_1500/stock-photo-customer-support-wooden-signpost-with-four-arrows-and-sky-2399658873.jpg">
+        </div>
+        <div class="">
+            <br>
+            <section id=#home>
+                <h4 class="heading">This website provides instant guidance on various topics like career, educations, relationships and many others.</h4>
+                <p class="para1">
+                    Inspired from <a href="https://rebeccacampbell.me/instant-guidance/" target="_blank">Oracle Instance Guidance</a>.
+                    This webpage serves as an example of an instant guidance website, providing a glimpse into how such a platform might look and function. With a simple and clean design, the webpage offers easy navigation and access to essential information.
+                </p>
+            </section>
+            <div class="services-box">
+                <section id=#Services>
+                <h4 class="heading">Services</h4>
+                <p>The Services that we provide are:</p>
+                <ol type="a" start=1>
+                    <li>
+                        Health and Wellness Advice
+                    </li>
+                    <li>
+                        Career Guidance
+                    </li>
+                    <li>
+                        Personal Development
+                    </li>
+                </ol>
+            </section>
+            </div>
+            <h4 class="heading">Contact US</h4>
+            <div class="contact-us-section">
+                <section id=#contactus>
+                    <div class="contactus-inside">
+                        <p>Please share us your query:</p>
+                        <form action="#" method="post">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required><br><br>
+
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required><br><br>
+
+                            <label for="message">Message:</label><br>
+                            <textarea id="message" name="message" rows="4" cols="24" required></textarea><br><br>
+
+                            <P>Gender:</P>
+                            <input type="radio" id="male" name="gender" value="male">
+                            <label for="male">Male</label><br>
+
+                            <input type="radio" id="female" name="gender" value="female">
+                            <label for="female">Female</label><br>
+
+                            <input type="radio" id="other" name="gender" value="other">
+                            <label for="other">Other</label>
+
+                            <br><br>
+                            <label for="subject">Subject:</label>
+                            <select id="subject" name="subject">
+                                <option value="general">General Inquiry</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="support">Support</option>
+                            </select><br><br>
+                            <label>Hobbies:</label><br>
+                            <input type="checkbox" id="interest1" name="interests" value="reading">
+                            <label for="interest1">Reading Books</label><br>
+                            <input type="checkbox" id="interest2" name="interests" value="cricket">
+                            <label for="interest2">Cricket</label><br>
+                            <input type="checkbox" id="interest3" name="interests" value="listening">
+                            <label for="interest3">Music</label><br><br>
+                            <button type="submit" class="btn" value="Submit">Submit</button>
+                        </form>
+                    </div>
+                </section>
+            </div>
+            <section id="Aboutus">
+                <h4 class="heading">About us</h4>
+                <p>We are team dedicated to provide flexible solutions to the problems.</p>
+                <p>Want to delve more to know the problems of people</p>
+                <p>Email: instanceguidance@gmail.com</p>
+            </section>
+            <footer style="text-align:center;background-color:grey">
+                <p>&copy; 2024 Instant Guidance Website. All rights reserved.</p>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

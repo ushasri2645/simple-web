@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.body {
+    height: 100%;
+    border-radius: 3px;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+    font-family: "Bree Serif";
+}
+
+.services-box {
+    background-color: white;
+    padding: 5px;
+    width: 40%;
+    border-radius: 8px;
+    border-bottom-style: solid;
+}
+
+.nav-item:hover {
+    color: blue;
+}
+
+.image {
+    margin-left: 100px;
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+}
+
+.heading {
+    font-style: italic;
+
+}
+
+.para1 {
+    font-family: "Bree Serif";
+    font-size: 13px;
+}
+
+
+.contact-us-section {
+    border: dashed orange;
+    border-top-left-radius: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 80px;
+    width:200px;
+    text-align: center;
+    border-width: 2.5px;
+    background-color: #b3949f;
+}
+
+.contactus-inside {
+    text-align: left;
+}
+
+#tpye-of-info {
+    text-align: center;
+    margin-left: 30vw;
+}
+
+.ip1 {
+    height: 30px;
+    border-style: dashed;
+    border-radius: 8px;
+}
+
+.btn {
+    background-color: lightblue;
+    padding: 5px;
+    border-radius: 8px;
+    width: 90px;
+}
