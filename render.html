@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <style>
+          table {
+            border-collapse: collapse;
+            width: 100%;
+          }
+          th, td {
+            border: 2px solid black;
+            text-align: left;
+            padding: 8px;
+          }
+          th {
+            background-color: #f2f2f2;
+          }
+          .delete-btn {
+            background-color: purple;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            cursor: pointer;
+            border-radius: 4px;
+          }
+      </style>
+  </head>
+  <body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h3 class="text-center">Rendering the Elements of Array</h3>
+                <table id="table-list">
+                    <thead>
+                        <tr>
+                            <th class="mr-3">Name</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+  </body>
+  <script>
+      const array = [
+    { id: 1, name: "Usha" },
+    { id: 2, name: "Anil" },
+    { id: 3, name: "Achyu" },
+    { id: 4, name: "Varun" }
+ ];
+ 
+ 
+
+function render(){
+    const table_body=document.querySelector("#table-list tbody")
+    table_body.innerHTML = "";
+    array.forEach(item=>{
+        const row=document.createElement("tr");
+        row.innerHTML=`<td>${item.name}</td>
+                        <td><button class="delete-btn" data-id=${item.id}">Delete</button></td>
+                        `
+        table_body.appendChild(row);
+    })
+}
+render();
+
+function handleDelete(event) {
+    const id = parseInt(event.target.dataset.id);
+    const index = array.findIndex(item => item.id === id);
+    if (index !== -1) {
+      array.splice(index, 1);
+      render();
+    }
+ }
+
+document.querySelector("#table-list tbody").addEventListener("click", function(event) {
+    if(event.target.classList.contains("delete-btn")) {
+      handleDelete(event);
+    }
+ });
+
+
+
+ 
+  </script>
+</html>
